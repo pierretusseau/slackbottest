@@ -17,10 +17,10 @@ app.listen(port, function () {
 app.post('/hello', function (req, res, next) {
   // var userName = req.body.user_name;
   // var userName = req.body.username;
-  var userName = req.username;
+  // var userName = req.body.username;
   // var userName = username;
   var botPayload = {
-  	text : 'Salut ' + userName + ', et à toutes les autres grosses salopes'
+  	text : 'Salut ' + username + ', et à toutes les autres grosses salopes'
   };
 
   if (userName !== 'slackbot') {
