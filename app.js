@@ -14,7 +14,7 @@ app.listen(port, function () {
   console.log('Listening on port ' + port);
 });
 
-app.post('/hello', function (req, res, next) {
+app.get('/hello', function (req, res, next) {
   var userName = req.body.user_name;
   var botPayload = {
   	text : 'Hello ' + userName + ', welcome to BTF Slack, where we kill young babies every sunday night.'
