@@ -16,14 +16,14 @@ app.listen(port, function () {
 
 app.post('/hello', function (req, res, next) {
   // var userName = req.body.user_name;
-  // var userName = req.body.username;
+  var userName = req.body.username;
   // var userName = req.body.username;
   // var userName = username;
   var botPayload = {
-  	text : 'Salut ' + username + ', et à toutes les autres grosses salopes'
+  	text : 'Salut ' + userName + ', et à toutes les autres grosses salopes'
   };
 
-  if (userName !== 'slackbot') {
+  if (userName !== ('slackbot') || ('slackbottest')) {
   	return res.status(200).json(botPayload);
   } else {
   	return res.status(200).end();
