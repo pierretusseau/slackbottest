@@ -19,7 +19,7 @@ app.post('/hello', function (req, res, next) {
   	text : 'Hello ' + username + ', welcome to BTF Slack, where we kill young babies every sunday night.'
   };
 
-  if (userName !== 'Trouduc\'') {
+  if (username !== ('slackbottest')||('slackbot')) {
   	return res.status(200).json(botPayload);
   } else {
   	return res.status(200).end();
