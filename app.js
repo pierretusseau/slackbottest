@@ -14,13 +14,13 @@ app.listen(port, function () {
   console.log('Listening on port ' + port);
 });
 
-app.post('/hello', function (req, res, next) {
+app.post('/hello', function (req, res, next, username) {
   // var userName = req.body.user_name;
-  var userName = req.body.username;
+  // var userName = req.body.username;
   // var userName = req.body.username;
   // var userName = username;
   var botPayload = {
-  	text : 'Salut ' + userName + ', et à toutes les autres grosses salopes'
+  	text : 'Salut ' + username + ', et à toutes les autres grosses salopes'
   };
 
   if (userName !== ('slackbot') || ('slackbottest')) {
