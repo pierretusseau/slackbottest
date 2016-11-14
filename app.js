@@ -15,11 +15,14 @@ app.listen(port, function () {
 });
 
 app.post('/hello', function (req, res, next) {
+  // var userName = req.body.user_name;
+  // var userName = req.body.username;
+  var userName = username;
   var botPayload = {
-  	text : 'Hello ' + username + ', welcome to BTF Slack, where we kill young babies every sunday night.'
+  	text : 'Salut ' + userName + ', et à toutes les autres grosses salopes'
   };
 
-  if (username !== ('slackbottest')||('slackbot')) {
+  if (userName !== 'slackbot') {
   	return res.status(200).json(botPayload);
   } else {
   	return res.status(200).end();
