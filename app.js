@@ -20,7 +20,7 @@ app.post('/hello', function (req, res, next) {
   // var userName = req.username;
   // var userName = username;
   var botPayload = {
-  	text : 'Salut ' + userName + ', et à toutes les autres grosses salopes'
+  	text : 'Salut ' + userName + ' ! :wave: '
   };
 
   if (userName !== ('slackbot') || ('slackbottest')) {
